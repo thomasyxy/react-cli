@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+const program = require('commander')
+console.log(1)
+function help () {
+  program.parse(process.argv)
+  if (program.args.length < 1) return program.help()
+}
+help()
